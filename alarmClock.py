@@ -9,7 +9,7 @@ amPm=str(input("am or pm : "))
 os.system('cls')
 print("Waiting for alarm : ",timeH,timeM,amPm)
 if(amPm=='pm'):
-    amPm=amPm+12
+    timeH=timeH+12
 
 while(True):
     if(timeH==datetime.datetime.now().hour and timeM==datetime.datetime.now().minute):
